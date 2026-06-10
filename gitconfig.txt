@@ -5,4 +5,6 @@ npx create-expo-app@latest pokedex
 
 cd pokedex
 
-pág 29
+npm i @expo/vector-icons
+
+pág 33
