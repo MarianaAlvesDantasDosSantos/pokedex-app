@@ -3,7 +3,7 @@ import { styles } from "./styles";
 import { Ionicons } from "@expo/vector-icons";
 import { useRoute } from "expo-router";
 
-const imageSource = require("@/assets/images/header.jpg");
+const imageSource = require("./assets/images/header.jpg");
 
 export default function Header({ title, back = false }) {
     const router = useRoute();
