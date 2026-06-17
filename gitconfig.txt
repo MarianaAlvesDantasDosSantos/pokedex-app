@@ -10,4 +10,4 @@ npm i @expo/vector-icons
 npx expo start --android
 npx expo start --tunnel --android
 
-pág 34
+pág 42

@@ -1,10 +1,25 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, FlatList } from "react-native";
 import Header from '@/components/Header';
+import { pokemons} from "@/data/pokemons"
 
 export default function Index() {
+
+const rederPokemon = ({ item }) => (
+  <Text>{item.Nome}</Text>
+)
+
   return (
     <View style={styles.container}>
     <Header title="Pokédex"/>
+    <FlatList
+    data={pokemons}
+    style={styles.cards}
+    keyExtractor={(pokemons) => pokemons.Numero.toString()}
+    renderItem={ renderPokemon }
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    windowSize={5}
+    />
     </View>
   );
 }
@@ -19,3 +34,4 @@ const styles = StyleSheet.create({
     padding: 15,
   }
 });
+
