@@ -10,4 +10,5 @@ npm i @expo/vector-icons
 npx expo start --android
 npx expo start --tunnel --android
 
+Feira#2026
 pág 48

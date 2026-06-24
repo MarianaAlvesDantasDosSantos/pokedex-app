@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { backgrounds, border, borderRadius, darken, padding } from "polished";
+import { darken } from "polished";
 import { styles } from "./styles";
 
 export default function Button({ tipo, large = false }) {
@@ -12,7 +12,7 @@ export default function Button({ tipo, large = false }) {
     };
 
     const textStyle = {
-        fontSize: large ? 24 : 24,
+        fontSize: large ? 24 : 14,
     };
 
     return (
